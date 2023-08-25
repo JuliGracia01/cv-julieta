@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Syne:wght@600&display=swap');
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -8,7 +11,37 @@
 
 h1{
 	color: #C7A6CF;
+	font-family: 'Syne', sans-serif;
+	font-size: 50px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
+
+h3{
+	color: #26336E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+p{
+	color: #191930;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 50px;
+	
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -22,10 +55,31 @@ nav ul li{
 }
 .botonera{
 	list-style: none;
+	width: 1100px;
+	height: 70px;
+	background-color: #26336E;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.botonera a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px;
+}
+.botonera a:hover{
+	color: #26336E;
+	background-color: #A78BC0
 }
 ul.botonera a{
 	color: #A78BC0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500; 
+	font-size: 15px;
 }
 ul.botonera a:hover{
-	color: #26336E
+	color: white;
 }
