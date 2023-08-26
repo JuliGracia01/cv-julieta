@@ -13,11 +13,18 @@ h1{
 	color: #C7A6CF;
 	font-family: 'Syne', sans-serif;
 	font-size: 50px;
-	padding-top: 50px;
+	padding-top: 70px;
 	padding-bottom: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
+img{
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 50px;
+}
+
 
 h3{
 	color: #26336E;
@@ -33,7 +40,7 @@ h3{
 p{
 	color: #191930;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 14px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -42,21 +49,39 @@ p{
 	
 }
 
+h4{
+	color: #26336E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 a {
 	text-decoration: none;
-	color: black;
+	color: #191930;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 50px;
 }
 
 a:hover {
-	color: #5A197F;
+	color: #a78bc0;
 }
 nav ul li{
 	display: inline;
 }
 .botonera{
 	list-style: none;
-	width: 1100px;
-	height: 70px;
+	width: 1300px;
+	height: 50px;
 	background-color: #26336E;
 	padding-top: 40px;
 	padding-bottom: 10px;
@@ -82,4 +107,33 @@ ul.botonera a{
 }
 ul.botonera a:hover{
 	color: white;
+}
+ul.idiomas{
+	color: #191930;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 50px;
+}
+.contacto li{
+	color: #191930;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 50px;
+}
+
+h6{
+	color: #C7A6CF;
+	font-family: 'Syne', sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
