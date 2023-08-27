@@ -67,6 +67,11 @@ p{
 	
 }
 
+.contenido p{
+	font-weight: 500;
+	font-size: 16px;
+}
+
 h4{
 	color: #26336E;
 	font-family: 'Montserrat', sans-serif;
@@ -96,7 +101,7 @@ a:hover {
 .botonera{
 	list-style: none;
 	width: 1300px;
-	height: 50px;
+	height: 40px;
 	background-color: #26336E;
 	padding-top: 40px;
 	padding-bottom: 10px;
@@ -113,7 +118,7 @@ a:hover {
 	border: 1px;
 	border-radius: 30px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: baseline;
 }
 .botonera a:hover{
@@ -123,8 +128,8 @@ a:hover {
 ul.botonera a{
 	color: #A78BC0;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600; 
-	font-size: 18px;
+	font-weight: 600PX; 
+	font-size: 15px;
 }
 ul.botonera a:hover{
 	color: white;
