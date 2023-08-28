@@ -7,97 +7,13 @@
 *{
 	margin: 0px;
 	padding: 0px;
-}
-.content {
-	display: flex;
-	align-items: center;
-}
-.content div {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-.content img {
-	padding-left: 100px;
-	padding-top: 50px;
+	list-style-type: none;
 }
 
 body{
 	background-color: #DCC8E3
 }
 
-h1{
-	color: #26336e;
-	font-family: 'Syne', sans-serif;
-	font-size: 200px;
-	padding-top: 170px;
-	padding-bottom: 170px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-
-/* img{
-	padding-top: 5px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 50px;
-}*/
-
-
-h3{
-	color: #26336E;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 30px;
-	padding-top: 50px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 20px;
-}
-
-p{
-	color: #191930;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 90px;
-	
-}
-
-.contenido p{
-	font-weight: 500;
-	font-size: 16px;
-}
-
-h4{
-	color: #26336E;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 20px;
-}
-
-a {
-	text-decoration: none;
-	color: #191930;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 14px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 50px;
-}
-
-a:hover {
-	color: #a78bc0;
-}
 .botonera{
 	list-style: none;
 	width: 1300px;
@@ -134,15 +50,102 @@ ul.botonera a{
 ul.botonera a:hover{
 	color: white;
 }
-ul.idiomas{
-	color: #191930;
+/*titulo mi nombre*/
+h1{
+	color: #26336e;
+	font-family: 'Syne', sans-serif;
+	font-size: 200px;
+	padding-top: 170px;
+	padding-bottom: 170px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+/*imagen y texto*/
+.content {
+	display: flex;
+	align-items: flex-end;
+}
+.content div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.content img {
+	padding-left: 100px;
+	padding-top: 50px;
+}
+/*sobre mi*/
+.contenido p{
 	font-family: 'Montserrat', sans-serif;
+	color: #191930;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	padding-right: 85px;
+}
+.contenido h3{
+	color: #26336E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 60px;
+	padding-right: 85px;
+}
+/*división en columnas*/
+.contenedor {
+	display: flex;
+}
+.columna1 {
+	flex-direction: column;
+}
+
+/*experiencia, educación, idiomas, habilidades*/
+
+h4{
+	color: #26336E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 100px;
+	padding-right: 20px;
+}
+.columna1 h3{
+	color: #26336E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	padding-top: 50px;
+	padding-bottom: 5px;
+	padding-left: 100px;
+	padding-right: 85px;
+}
+.columna1 p{
+	font-family: 'Montserrat', sans-serif;
+	color: #191930;
+	font-weight: 500;
+	font-size: 16px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 100px;
-	padding-right: 50px;
+	padding-right: 85px;
+}
+
+/*contacto*/
+.contacto h3{
+	color: #26336E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	padding-top: 50px;
+	padding-bottom: 5px;
+	padding-left: 100px;
+	padding-right: 85px;
 }
 .contacto ul li{
 	color: #191930;
@@ -154,6 +157,57 @@ ul.idiomas{
 	padding-left: 100px;
 	padding-right: 50px;
 }
+
+
+/*p{
+	color: #191930;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 100px;
+	padding-right: 90px;
+}*/
+
+/* img{
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 100px;
+	padding-right: 50px;
+}*/
+
+
+/*h3{
+	color: #26336E;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	padding-top: 50px;
+	padding-bottom: 5px;
+	padding-left: 100px;
+	padding-right: 20px;
+}*/
+
+
+
+a {
+	text-decoration: none;
+	color: #191930;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 100px;
+	padding-right: 20px;
+}
+
+a:hover {
+	color: #a78bc0;
+}
+
+
 
 h6{
 	color: #a78bc0;

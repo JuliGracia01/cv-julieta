@@ -7,7 +7,7 @@
 </head>
 
 	<!--profes,nose por qué cuando lo visualizo en la web, en la botonera se ven unos espacios blancos que yo no puse. Todavía me cuesta poner orden en el css
-	Usé flexbox para la botonera y quería usarlo tambíén para generar columnas con las otras secciones pero nose si debería poner un aside en algún caso.-->
+	Usé flexbox para la botonera y para las dos columnas de texto abajo-->
 	
 <body>
 	<header>
@@ -31,15 +31,16 @@
 			<article class="#sobremi" id="sobremi">
 				<div class="content">
 					<img src="img/mifotocv.jpg" width="300" height="225" alt="mifotocv"/>
-					<div>
+					<div class="contenido">
 						<h3>_SOBRE MÍ</h3>
 						<p>Me llamo Julieta Gracia y actualmente me encuentro cursando la carrera Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Como futura diseñadora tengo como objetivo desarrollar mi potencial creativo y poder brindar toda mi formación a servicio y asesoramiento del cliente. Mis intereses se encuentran orientados al arte, tanto la pintura, el dibujo, la música como la fotografía son actividades que disfruto.</p>
 					</div>
 				</div>
 			</article>
 		</section>
-		<section>
-			<article class="#experiencia" id="experiencia">
+		<section class="contenedor">
+			<div class="columna1">
+			<article>
 				<h3>_EXPERIENCIA</h3>
 				<ul>
 					<li><h4>Diseño gráfico</h4></li>
@@ -48,15 +49,18 @@
 					<p>Sandra Ele_2021-2022</p>
 				</ul>
 			</article>
-		</section>
-		<section>
+			<!--</div>-->
+		<!--</section>
+		<section>-->
 			<article class="#educación" id="educación">
 				<h3>_EDUCACIÓN</h3>
 				<h4>Licenciatura en Diseño y Comunicación Visual</h4>
 				<p>Universidad Nacional de Lanús_ 2020/actualidad</p>
 			</article>
-		</section>
-		<section>
+			</div>
+		<!--</section>
+		<section>-->
+			<div class="columna1">
 			<article class="#idiomas" id="idiomas">
 				<h3>_IDIOMAS</h3>
 				<ul>
@@ -66,8 +70,8 @@
 					<li><p>italiano | básico</p></li>
 				</ul>
 			</article>
-		</section>
-		<section>
+		<!--</section>
+		<section>-->
 			<article class="#habilidades" id="habilidades">
 				<h3>_HABILIDADES</h3>
 				<ul>
@@ -76,6 +80,7 @@
 					<li><p>Adobe Indesign</p></li>
 				</ul>
 			</article>
+			</div>
 		</section>
 		<section>
 			<article class="contacto" id="contacto">
