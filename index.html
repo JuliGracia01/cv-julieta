@@ -1,16 +1,20 @@
 <!doctype html>
 <html>
-<head>
+<head> <!-- falta indentar el contenido de head -->
 <meta charset="utf-8">
 <title>Julieta Gracia - CV</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
 
 	<!--profes,nose por qué cuando lo visualizo en la web, en la botonera se ven unos espacios blancos que yo no puse. También se me desfazó el color que aparece al posicionarse sobre las opciones de la botonera y no veo como solucionarlo. Todavía me cuesta poner orden en el css. En contacto, no puedo lograr que el link de behance se alinee con los otros textos.Usé flexbox para la botonera y para las dos columnas de texto abajo-->
+
+	<!-- se te están pisando las class del nav y de la ul porque hacen lo mismo, por eso empieza a visualizarse lo mismo dos veces y te agrega espacio, te conviene borrar la class de la ul, y cuando necesties llamar a la ul hacelo como "botonera ul{ }"
+	
+	sobre el behance, lo que pasa es que en la línea 194 estableciste que todas las <a> tengan un padding left de 100px, capaz no te conviene que todas las <a> sean así, sino que solo se aplique a las que estén dentro de una etiqueta específica -->
 	
 <body>
 	<header>
-		<nav class="botonera">
+		<nav class="botonera"> 
 			<ul class="botonera">
 				<li><a href="#sobremi" target="_self">Sobre mí</a></li>
 				<li><a href="#experiencia" target="_self">Experiencia</a></li>
@@ -26,13 +30,13 @@
 		<!--<img src="img/mifotocv.jpg" width="300" height="225" alt="mifotocv"/>--> 
 	</article>
 	<main>
-		<section>
-			<article class="#sobremi" id="sobremi">
+		<section> <!-- esta section tiene un div de más, si lo sacamos no va a cambiar nada del contenido, pero sí algunas propiedades van a tener que migrar a otra etiqueta -->
+			<article class="#sobremi" id="sobremi"> <!-- acá hay algo semanticamente mal con la class y el id, por qué se repiten? -->
 				<div class="content">
 					<img src="img/mifotocv.jpg" width="300" height="225" alt="mifotocv"/>
 					<div class="contenido">
 						<h3>_SOBRE MÍ</h3>
-						<p>Me llamo Julieta Gracia y actualmente me encuentro cursando la carrera Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Como futura diseñadora tengo como objetivo desarrollar mi potencial creativo y poder brindar toda mi formación a servicio y asesoramiento del cliente. Mis intereses se encuentran orientados al arte, tanto la pintura, el dibujo, la música como la fotografía son actividades que disfruto.</p>
+						<p>Me llamo Julieta Gracia y actualmente me encuentro cursando la carrera Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Como futura diseñadora tengo como objetivo desarrollar mi potencial creativo y poder brindar toda mi formación a servicio y asesoramiento del cliente. Mis intereses se encuentran orientados al arte, tanto la pintura, el dibujo, la música como la fotografía son actividades que disfruto.</p> <!-- esta línea de texto está muy larga, es mejor establecerle desde css un max-width para que tenga un límite y no molesta cuando veamos la parte de responsive -->
 					</div>
 				</div>
 			</article>
@@ -82,7 +86,7 @@
 			</div>
 		</section>
 		<section>
-			<article class="contacto" id="contacto">
+			<article class="contacto" id="contacto"> <!-- para qué está este article? no es suficiente con la section? -->
 				<h3>_CONTACTO</h3>
 				<ul>
 					<li>juligracia2016@gmail.com</li>
