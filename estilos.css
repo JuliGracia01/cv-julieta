@@ -16,7 +16,7 @@ body{
 
 .botonera{
 	list-style: none;
-	width: 1300px;
+	width: 1300px; /* los anchos fijos no están buenos, te conviene empezar a usar porcentajes */
 	height: 40px;
 	background-color: #26336E;
 	padding-top: 40px;
@@ -26,6 +26,24 @@ body{
 	display: flex;
 	justify-content: center;
 }
+
+/* Hay otra forma de tener mejor los paddings y margins, en lugar de poner top left y right individualmente podés hacerlo en una sola línea así:
+
+padding: 40px 20px 10px 20px;
+
+donde el primer valor pertenere a top, el segundo a right, el tercero a bottom, y el cuarto a left. También hay otra forma:
+
+padding: 40px 20px;
+
+donde el primer valor pertence a top y bottom, y el segundo a left y right. Hay una tercera y es:
+
+padding: 40px 20px 10px;
+
+donde el primer valor pertenece a top, el segundo a right y left, y el tercero a bottom. Esta tercera opción va a quedar mucho mejor con tu tp.
+
+fijate de corregir esto en todo el css porque en varios lugares establecés varios paddings por separado. si necesitás uno de los valores sin nada solo ponele 0.
+
+*/
 .botonera a{
 	padding-top: 10px;
 	padding-bottom: 10px;
