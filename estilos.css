@@ -71,7 +71,7 @@ ul.botonera a:hover{
 /*titulo mi nombre*/
 h1{
 	color: #26336e;
-	font-family: 'Syne', sans-serif;
+	font-family: 'Syne', sans-serif; /* no es la mejor desición de diseño esta tipografía como iniciales porque se lee como "ig" debido a que los descendentes de las letras están cortados y no se ve bien la J */
 	font-size: 200px;
 	padding-top: 170px;
 	padding-bottom: 170px;
@@ -81,20 +81,20 @@ h1{
 /*imagen y texto*/
 .content {
 	display: flex;
-	align-items: flex-end;
+	align-items: flex-end; /* falta una propiedad de flex para que esta caja se vea 10 puntos */
 }
 .content div {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: flex-end; /* esta propiedad no está haciendo nada */
 }
 .content img {
-	padding-left: 100px;
+	padding-left: 100px; /* siempre que un padding sea igual o mayor a 100px lo más probable es que hay otra forma de resolverlo con flexbox */
 	padding-top: 50px;
 }
 /*sobre mi*/
 .contenido p{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif; /* esta font family  */
 	color: #191930;
 	font-weight: 500;
 	font-size: 16px;
