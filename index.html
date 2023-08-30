@@ -1,21 +1,15 @@
 <!doctype html>
 <html>
 <head> <!-- falta indentar el contenido de head -->
-<meta charset="utf-8">
-<title>Julieta Gracia - CV</title>
-<link href="estilos.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<title>Julieta Gracia - CV</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
 
-	<!--profes,nose por qué cuando lo visualizo en la web, en la botonera se ven unos espacios blancos que yo no puse. También se me desfazó el color que aparece al posicionarse sobre las opciones de la botonera y no veo como solucionarlo. Todavía me cuesta poner orden en el css. En contacto, no puedo lograr que el link de behance se alinee con los otros textos.Usé flexbox para la botonera y para las dos columnas de texto abajo-->
-
-	<!-- se te están pisando las class del nav y de la ul porque hacen lo mismo, por eso empieza a visualizarse lo mismo dos veces y te agrega espacio, te conviene borrar la class de la ul, y cuando necesties llamar a la ul hacelo como "botonera ul{ }"
-	
-	sobre el behance, lo que pasa es que en la línea 194 estableciste que todas las <a> tengan un padding left de 100px, capaz no te conviene que todas las <a> sean así, sino que solo se aplique a las que estén dentro de una etiqueta específica -->
-	
 <body>
 	<header>
 		<nav class="botonera"> 
-			<ul class="botonera">
+			<ul>
 				<li><a href="#sobremi" target="_self">Sobre mí</a></li>
 				<li><a href="#experiencia" target="_self">Experiencia</a></li>
 				<li><a href="#educación" target="_self">Educación</a></li>
@@ -25,26 +19,23 @@
 			</ul>
 		</nav>
 	</header>
-	<article>
-		<h1>.jg</h1>
-		<!--<img src="img/mifotocv.jpg" width="300" height="225" alt="mifotocv"/>--> 
-	</article>
 	<main>
-		<section> <!-- esta section tiene un div de más, si lo sacamos no va a cambiar nada del contenido, pero sí algunas propiedades van a tener que migrar a otra etiqueta -->
-			<article class="#sobremi" id="sobremi"> <!-- acá hay algo semanticamente mal con la class y el id, por qué se repiten? -->
-				<div class="content">
+		<div class="nombre">
+			<h1>.JG</h1>
+		</div>
+		<section>
+			<article class="sobremi" id="#sobremi">
 					<img src="img/mifotocv.jpg" width="300" height="225" alt="mifotocv"/>
 					<div class="contenido">
-						<h3>_SOBRE MÍ</h3>
-						<p>Me llamo Julieta Gracia y actualmente me encuentro cursando la carrera Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Como futura diseñadora tengo como objetivo desarrollar mi potencial creativo y poder brindar toda mi formación a servicio y asesoramiento del cliente. Mis intereses se encuentran orientados al arte, tanto la pintura, el dibujo, la música como la fotografía son actividades que disfruto.</p> <!-- esta línea de texto está muy larga, es mejor establecerle desde css un max-width para que tenga un límite y no molesta cuando veamos la parte de responsive -->
+						<h3>SOBRE MÍ ꕤ</h3>
+						<p>Me llamo Julieta Gracia y actualmente me encuentro cursando la carrera Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Como futura diseñadora tengo como objetivo desarrollar mi potencial creativo y poder brindar toda mi formación a servicio y asesoramiento del cliente. Mis intereses se encuentran orientados al arte, tanto la pintura, el dibujo, la música como la fotografía son actividades que disfruto.</p>
 					</div>
-				</div>
 			</article>
 		</section>
 		<section class="contenedor">
 			<div class="columna1">
-			<article>
-				<h3>_EXPERIENCIA</h3>
+			<article class="#experiencia" id="experiencia">
+				<h3>EXPERIENCIA࿐</h3>
 				<ul>
 					<li><h4>Diseño gráfico</h4></li>
 					<p>Syse, Servicios y soluciones electromecánicos_2023</p>
@@ -56,7 +47,7 @@
 		<!--</section>
 		<section>-->
 			<article class="#educación" id="educación">
-				<h3>_EDUCACIÓN</h3>
+				<h3>EDUCACIÓN࿐</h3>
 				<h4>Licenciatura en Diseño y Comunicación Visual</h4>
 				<p>Universidad Nacional de Lanús_ 2020/actualidad</p>
 			</article>
@@ -65,7 +56,7 @@
 		<section>-->
 			<div class="columna1">
 			<article class="#idiomas" id="idiomas">
-				<h3>_IDIOMAS</h3>
+				<h3>IDIOMAS࿐</h3>
 				<ul>
 					<li><p>español | nativo</p></li>
 					<li><p>inglés | avanzado</p></li>
@@ -76,7 +67,7 @@
 		<!--</section>
 		<section>-->
 			<article class="#habilidades" id="habilidades">
-				<h3>_HABILIDADES</h3>
+				<h3>HABILIDADES࿐</h3>
 				<ul>
 					<li><p>Adobe Illustrator</p></li>
 					<li><p>Adobe Photoshop</p></li>
@@ -87,17 +78,21 @@
 		</section>
 		<section>
 			<article class="contacto" id="contacto"> <!-- para qué está este article? no es suficiente con la section? -->
-				<h3>_CONTACTO</h3>
+				<h3>CONTACTO࿐</h3>
 				<ul>
 					<li>juligracia2016@gmail.com</li>
 					<li>11 5013 1255</li>
-					<li><a href="https://www.behance.net/julietagracia" target="_blank">Behance</a></li> 
+					<li>
+						<a href="https://www.behance.net/julietagracia" target="_blank">
+							<img src="img/behance.svg" width="30px" height="30px" alt="behance"/>
+						</a>
+					</li>
 				</ul>
 			</article>
 		</section>
 	</main>
 	<footer>
-		<h6>COMPUIII_UNLa2023</h6>
+		<h6>COMPUIII_ CÁTEDRA WISCHÑEVSKY_ UNLa2023</h6>
 	</footer>
 </body>
 </html>

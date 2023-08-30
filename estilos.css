@@ -1,121 +1,121 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Syne:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&family=Montserrat:wght@300;400;500;600&family=Syne:wght@600&display=swap');
 
 *{
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
-}
-
-body{
-	background-color: #DCC8E3
+	text-decoration: none;
 }
 
 .botonera{
 	list-style: none;
-	width: 1300px; /* los anchos fijos no están buenos, te conviene empezar a usar porcentajes */
 	height: 40px;
-	background-color: #26336E;
-	padding-top: 40px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
+	background-color: #26336e;
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 30px;
 }
 
-/* Hay otra forma de tener mejor los paddings y margins, en lugar de poner top left y right individualmente podés hacerlo en una sola línea así:
+.botonera ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	gap: 30px;
+}
 
-padding: 40px 20px 10px 20px;
-
-donde el primer valor pertenere a top, el segundo a right, el tercero a bottom, y el cuarto a left. También hay otra forma:
-
-padding: 40px 20px;
-
-donde el primer valor pertence a top y bottom, y el segundo a left y right. Hay una tercera y es:
-
-padding: 40px 20px 10px;
-
-donde el primer valor pertenece a top, el segundo a right y left, y el tercero a bottom. Esta tercera opción va a quedar mucho mejor con tu tp.
-
-fijate de corregir esto en todo el css porque en varios lugares establecés varios paddings por separado. si necesitás uno de los valores sin nada solo ponele 0.
-
-*/
 .botonera a{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 20px;
-	border: 1px;
-	border-radius: 30px;
+	padding: 10px;
+	border: 3px;
+	border-radius: 15px;
 	display: flex;
-	justify-content: center;
-	align-items: baseline;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
+
 .botonera a:hover{
-	color: #26336E;
-	background-color: #A78BC0
+	color: white;
+	background-color: #f4b3c4
 }
-ul.botonera a{
-	color: #A78BC0;
+
+.botonera ul a{
+	color: #f4b3c4;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600PX; 
+	font-weight: 600; 
 	font-size: 15px;
 }
-ul.botonera a:hover{
-	color: white;
+
+.botonera ul a:hover{
+	color: #28367F;
 }
 /*titulo mi nombre*/
 h1{
 	color: #26336e;
-	font-family: 'Syne', sans-serif; /* no es la mejor desición de diseño esta tipografía como iniciales porque se lee como "ig" debido a que los descendentes de las letras están cortados y no se ve bien la J */
+	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 200px;
-	padding-top: 170px;
-	padding-bottom: 170px;
-	padding-left: 100px;
-	padding-right: 100px;
+	font-weight: 400;
+	background-color: #f4b3c4;
+	padding: 170px 100px;
 }
+
+/*.nombre h1{
+	background-color: #f4b3c4;
+	padding: 100px;
+}*/
+
 /*imagen y texto*/
-.content {
+
+.sobremi {
 	display: flex;
-	align-items: flex-end; /* falta una propiedad de flex para que esta caja se vea 10 puntos */
+	align-items: flex-end; 
 }
-.content div {
+.sobremi article {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end; /* esta propiedad no está haciendo nada */
+	justify-content: flex-end; 
 }
-.content img {
-	padding-left: 100px; /* siempre que un padding sea igual o mayor a 100px lo más probable es que hay otra forma de resolverlo con flexbox */
-	padding-top: 50px;
+.sobremi img {
+	margin: 40px 0px 50px 100px;
 }
-/*sobre mi*/
+.contenido{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
 .contenido p{
-	font-family: 'Montserrat', sans-serif; /* esta font family  */
+	font-family: 'Montserrat', sans-serif; 
 	color: #191930;
 	font-weight: 500;
 	font-size: 16px;
-	padding-top: 5px;
-	padding-bottom: 10px;
-	padding-left: 60px;
-	padding-right: 85px;
+	margin: 5px 85px 10px 60px;
+	max-width: 50%;
+	line-height: 22px;
 }
 .contenido h3{
-	color: #26336E;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	color: #f4b3c4;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 500;
 	font-size: 30px;
 	padding-top: 10px;
-	padding-bottom: 5px;
-	padding-left: 60px;
-	padding-right: 85px;
+	padding-left: 5px;
+	border-bottom: 3px solid #26336E; 
+	/*border-radius: 30px;*/
+	margin:  5px 0px 10px 60px; /*intenté aplicar este mismo detalle del borde inferior en lo demás titulos pero me queda desfazado, nose si por poner las columnas en una sola caja, eso haga que me queden mal? cómo lo puedo resolver?*/
+	max-width: 210px;
 }
+
 /*división en columnas*/
-.contenedor {
+.contenedor{
 	display: flex;
+	flex-direction: row;
 }
 .columna1 {
 	flex-direction: column;
@@ -128,116 +128,55 @@ h4{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 18px;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	padding-left: 100px;
-	padding-right: 20px;
+	padding: 10px 20px 5px 100px;
+	/*profes, no estoy pudiendo encontrar otra alternativa a poner padding de 100px. Cómo puedo hacer sino*/
 }
+
 .columna1 h3{
-	color: #26336E;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	color: #f4b3c4;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 500;
 	font-size: 30px;
-	padding-top: 50px;
-	padding-bottom: 5px;
-	padding-left: 100px;
-	padding-right: 85px;
+	padding: 50px 85px 5px 100px;
 }
+
 .columna1 p{
 	font-family: 'Montserrat', sans-serif;
 	color: #191930;
 	font-weight: 500;
 	font-size: 16px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 100px;
-	padding-right: 85px;
+	padding: 5px 85px 5px 100px;
 }
 
 /*contacto*/
 .contacto h3{
-	color: #26336E;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
+	color: #f4b3c4;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 500;
 	font-size: 30px;
-	padding-top: 50px;
-	padding-bottom: 5px;
-	padding-left: 100px;
-	padding-right: 85px;
+	padding: 50px 85px 5px 100px;
 }
 .contacto ul li{
 	color: #191930;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	font-size: 14px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 100px;
-	padding-right: 50px;
-}
-
-
-/*p{
-	color: #191930;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
 	font-size: 16px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 90px;
-}*/
-
-/* img{
 	padding-top: 5px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 50px;
-}*/
-
-
-/*h3{
-	color: #26336E;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	font-size: 30px;
-	padding-top: 50px;
 	padding-bottom: 5px;
 	padding-left: 100px;
-	padding-right: 20px;
-}*/
-
-
-
-a {
-	text-decoration: none;
-	color: #191930;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 14px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 20px;
+	padding-right: 50px;
 }
-
-a:hover {
-	color: #a78bc0;
-}
-
-
 
 h6{
-	color: #a78bc0;
+	color: #213B87;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	font-size: 20px;
-	/*padding-top: 30px;
-	padding-bottom: 10px;
-	padding-left: 500px;
-	padding-right: 100px;*/
+	font-size: 16px;
 	display: flex;
 	justify-content: center;
+	margin-top: 50px;
 	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
+	background-color: #F4B3C4;
+	width: 100vw;
 }
