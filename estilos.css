@@ -107,10 +107,10 @@ h1{
 	padding-top: 10px;
 	padding-left: 5px;
 	border-bottom: 3px solid #26336E; 
-	/*border-radius: 30px;*/
+	/*border-radius: 30px;📌proba en usar esto!*/ 
 	margin:  5px 0px 10px 60px; /*intenté aplicar este mismo detalle del borde inferior en lo demás titulos pero me queda desfazado, nose si por poner las columnas en una sola caja, eso haga que me queden mal? cómo lo puedo resolver?*/
 	max-width: 210px;
-}
+} 
 
 /*división en columnas*/
 .contenedor{
@@ -129,6 +129,7 @@ h4{
 	font-weight: 600;
 	font-size: 18px;
 	padding: 10px 20px 5px 100px;
+	/*fijate de probar en usar una padding left pero en la seccion que contiene "contenedor"*/
 	/*profes, no estoy pudiendo encontrar otra alternativa a poner padding de 100px. Cómo puedo hacer sino*/
 }
 
