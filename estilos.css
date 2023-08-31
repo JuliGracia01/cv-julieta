@@ -11,15 +11,13 @@
 	text-decoration: none;
 }
 body{
-	/*background-color: #fdeef3;*/
-	background-color: #efed9b;
+	background-color: #fdeef3;
 }
 
 .botonera{
 	list-style: none;
 	height: 40px;
-	/*background-color: #213B87;azulfondobotonera1*/
-	background-color: #69c0ac;
+	background-color: #213B87;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -47,31 +45,26 @@ body{
 
 .botonera a:hover{
 	color: white;
-	/*background-color: #f4b3c4;*/
-	background-color: #2b255c;
+	background-color: #f4b3c4;
 }
 
 .botonera ul a{
-	/*color: #f4b3c4;*/
-	color: #2b255c;
+	color: #f4b3c4;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600; 
 	font-size: 15px;
 }
 
 .botonera ul a:hover{
-	/*color: #28367F;*/
-	color: #69c0ac;
+	color: #28367F;
 }
 /*titulo mi nombre*/
 h1{
-	/*color: #213B87; nombreazul1*/
-	color: #69c0ac;
+	color: #213B87;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 200px;
 	font-weight: 400;
-	/*background-color: #f4b3c4;*/
-	background-color: #2b255c;
+	background-color: #f4b3c4;
 	padding: 140px 100px;
 }
 
@@ -111,17 +104,15 @@ h1{
 	line-height: 22px;
 }
 .contenido h3{
-	/*color: #f4b3c4;*/
-	color: #2b255c;
+	color: #f4b3c4;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 500;
 	font-size: 30px;
 	padding-top: 10px;
 	padding-left: 5px;
-	/*border-bottom: 3px solid #213b87; bordeazul1*/
-	border-bottom: 3px solid #68c0b5;
+	border-bottom: 3px solid #213b87;
 	/*border-radius: 30px; /*📌proba en usar esto!*/ 
-	margin:  5px 0px 10px 60px; /*intenté aplicar este mismo detalle del borde inferior en lo demás titulos pero me queda desfazado, nose si por poner las columnas en una sola caja, eso haga que me queden mal? cómo lo puedo resolver?*/
+	margin:  5px 0px 10px 60px;
 	max-width: 210px;
 } 
 
@@ -138,20 +129,15 @@ h1{
 /*experiencia, educación, idiomas, habilidades*/
 
 h4{
-	/*color: #213b87;*/
-	color: #69c0ac;
+	color: #213b87;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 18px;
 	padding: 10px 20px 0px 100px;
-	
-	/*fijate de probar en usar una padding left pero en la seccion que contiene "contenedor"*/
-	/*profes, no estoy pudiendo encontrar otra alternativa a poner padding de 100px. Cómo puedo hacer sino*/
 }
 
 .columna1 h3{
-	/*color: #f4b3c4;*/
-	color: #2b255c;
+	color: #f4b3c4;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 500;
 	font-size: 30px;
@@ -176,14 +162,13 @@ h4{
 
 /*contacto*/
 .contacto h3{
-	/*color: #213b87;*/
-	color: #2b255c;
+	color: #213b87;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-weight: 500;
 	font-size: 30px;
 	padding: 10px 85px 0px 100px;
-	/*border-bottom: 3px solid #26336E;
-	background-color: #f4b3c4;*/
+	/*border-bottom: 3px solid #26336E;*/
+	background-color: #f4b3c4;
 }
 .contacto ul li{
 	color: #191930;
@@ -195,17 +180,14 @@ h4{
 }
 
 .contacto{
-	/*background-color: #f4b3c4;*/
-	background-color: #68c0b5;
-	/*border-top: 5px solid #213b87;*/
-	border-top: 5px solid #2b255c;
+	background-color: #f4b3c4;
+	border-top: 5px solid #213b87;
 	margin-top: 50px;
 	padding: 10px 0px;
 }
 
 h6{
-	/*color: #F4B3C4; */
-	color: #efed9b;
+	color: #F4B3C4; 
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 14px;
@@ -214,8 +196,7 @@ h6{
 	margin-top: 0px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	/*background-color: #213B87;*/
-	background-color: #2b255c;
+	background-color: #213B87;
 	width: 100vw;
 	word-spacing: 15px;
 }
