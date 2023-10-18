@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>contacto</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="img/favicon.svg">
+</head>
+	<!--acá en cuanto al formulario entiendo también que a los tamaños de la sección mas que nada me faltaría el tema del diseño responsive-->
+<body>
+	<header>
+		<nav class="botonera">
+			<div class="estrella1"> <a href="index.html"><img src="img/favicon.svg" width="96px" height="37px" alt="favicon"></a> <!--acá quise intentar que al apretar la estrellita te vuelva a llevar al index pero tabién se me aplica el hover que tengo en la botonera y no lo supe corregir. En el html de sobremí se lo saque, por ahí no es necesario ya que con la flecha se puede volver para atrás pero la idea podía ir jaja-->
+			</div>
+			<ul>
+				<li><a href="sobremi.html">Sobre Mí</a></li>
+				<li><a href="index.html">Proyectos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="https://www.behance.net/julietagracia" target="_blank">Behance</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="titulo">
+			<h2>Contacto</h2>
+		</section>
+		<section class="contacto">
+			<p class="pcontacto">En este espacio podés dejarme tu consulta!</p>
+			<form method="post" action="mailto:juligracia2016@gmail.com?subject='Email enviado desde el formulario'" target="_blank" enctype="text/plain">
+				<div>
+					<label for="nombreyapellido">Nombre y Apellido</label>
+					<input type="text" name="nombreyapellido" id="nombreyapellido" maxlength="30" placeholder="Escribí tu nombre y apellido acá" required>
+					
+					<label for="email">Correo Electrónico</label>
+					<input type="email" name="email" id="email" maxlength="30" required>
+				</div>
+				<div>
+					<label for="consulta">Consulta</label>
+					<textarea name="consulta" id="consulta" maxlength="80">Tu consulta...</textarea>
+					<input type="submit" value="Enviar" class="enviar">
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<h6>TODOS LOS DERECHOS RESERVADOS_ COMPUIII_ UNLA2023</h6>
+	</footer>
+</body>
+</html>
+

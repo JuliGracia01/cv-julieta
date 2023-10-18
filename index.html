@@ -4,101 +4,48 @@
 	<meta charset="utf-8">
 	<title>Julieta Gracia - CV</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
-	<link rel="icon" href="img/logoflor.svg">
+	<link rel="icon" href="img/favicon.svg">
 </head>
 
+	<!-- hola profes! les comento un poco que decidí volver a hacer el cv desde 0 ya que haciendo el tp grupal me di cuenta de muchas cosas que antes no había comprendido, también viendo los videos y con las correcciones. Pero bueno todavía me faltan ver los videos de las galerías de imágenes y sobre el diseño responsive porque me doy cuenta que me faltaría ajustar los tamaños de todo. Yo trabajo con una notebook de 1366x768 de resolución asiq veo que las medidas cambian. Además no me había quedado tan contenta con el otro cv con la composición y porque me costaba entender bien lo que estaba haciendo, asi que ahora intenté ponerme las pilas jaja. También haciendo este tp de nuevo veo y comprendo mejor el tema del flexbox que antes me costó tanto, creo que lo estoy sabiendo aplicar de mejor manera. En el css y los otros html les dejo algunas dudas-->
 <body>
 	<header>
-		<nav class="botonera"> 
+		<nav class="botonera">
+			<div class="estrella1"> <img src="img/favicon.svg" width="96px" height="37px" alt="favicon">
+			</div> 
 			<ul>
-				<li><a href="#sobremi" target="_self">Sobre mí</a></li>
-				<li><a href="#experiencia" target="_self">Experiencia</a></li>
-				<li><a href="#educación" target="_self">Educación</a></li>
-				<li><a href="#idiomas" target="_self">Idiomas</a></li>
-				<li><a href="#habilidades" target="_self">Habilidades</a></li>
-				<li><a href="#contacto" target="_self">Contacto</a></li>
+				<li><a href="sobremi.html">Sobre Mí</a></li>
+				<li><a href="#proyectos" target="_self">Proyectos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="https://www.behance.net/julietagracia" target="_blank">Behance</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<div class="nombre">
-			<h1>.JG</h1>
-		</div>
-		<section>
-			<article class="sobremi" id="sobremi">
-					<img src="img/mifotocv.jpg" width="300" height="225" alt="mifotocv"/>
-					<div class="contenido">
-						<h3>SOBRE MÍ ꕤ</h3>
-						<p>Me llamo Julieta Gracia y actualmente me encuentro cursando la carrera Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Como futura diseñadora tengo como objetivo desarrollar mi potencial creativo y poder brindar toda mi formación a servicio y asesoramiento del cliente. Mis intereses se encuentran orientados al arte, tanto la pintura, el dibujo, la música como la fotografía son actividades que disfruto.</p>
-					</div>
-			</article>
+		<section class="seccion1">
+			<h1>.Julieta</h1>
 		</section>
-		<section class="contenedor">
-			<div class="columna1">
-			<article class="#experiencia" id="experiencia">
-				<h3>EXPERIENCIA࿐</h3>
-				<ul>
-					<li><h4>Diseño gráfico</h4></li>
-					<p>Syse, Servicios y soluciones electromecánicos_2023</p>
-					<li><h4>Diseño gráfico</h4></li>
-					<p>Sandra Ele_2021-2022</p>
-				</ul>
-			</article>
-			<!--</div>-->
-		<!--</section>
-		<section>-->
-			<article class="#educación" id="educación">
-				<h3>EDUCACIÓN࿐</h3>
-				<h4>Licenciatura en Diseño y Comunicación Visual</h4>
-				<p>Universidad Nacional de Lanús_ 2020/actualidad</p>
-			</article>
+		<section class="seccion2">
+			<div class="mifoto"> <img src="img/mifotocv.jpg" width="400" height="300" alt="mifotocv"/>
 			</div>
-		<!--</section>
-		<section>-->
-			<div class="columna1">
-			<article class="#idiomas" id="idiomas">
-				<h3>IDIOMAS࿐</h3>
-				<ul>
-					<li><p>español | nativo</p></li>
-					<li><p>inglés | avanzado</p></li>
-					<li><p>francés | básico</p></li>
-					<li><p>italiano | básico</p></li>
-				</ul>
-			</article>
-		<!--</section>
-		<section>-->
-			<article class="#habilidades" id="habilidades">
-				<h3>HABILIDADES࿐</h3>
-					<a>
-						<img src="img/illustrator.svg" width="30px" height="30px" alt="illus">
-						<img src="img/photoshop.svg" width="30px" height="30px" alt="photoshop">
-						<img src="img/indesign.svg" width="30px" height="30px" alt="indesign">
-					</a>	
-				<!--<ul>
-					<li><p>Adobe Illustrator</p></li>
-					<li><p>Adobe Photoshop</p></li>
-					<li><p>Adobe Indesign</p></li>
-				</ul>-->
-			</article>
+			<div class="presentacion">
+				<img src="img/estrella.svg" height="100" alt="estrella"/>
+				<h5>Me llamo Julieta Gracia. Soy estudiante de la carrera Diseño y Comunicación Visual en la UNLa, Buenos Aires: Argentina.
+				</h5>
+				<a href="sobremi.html">
+					<button class="vermas">Más</button>
+				</a>
 			</div>
 		</section>
-		<section>
-			<article class="contacto" id="contacto"> <!-- para qué está este article? no es suficiente con la section? -->
-				<h3>CONTACTO࿐</h3>
-				<ul>
-					<li>juligracia2016@gmail.com</li>
-					<li>11 5013 1255</li>
-					<li>
-						<a href="https://www.behance.net/julietagracia" target="_blank">
-							<img src="img/behance.svg" width="30px" height="30px" alt="behance"/>
-						</a>
-					</li>
-				</ul>
-			</article>
+		<section class="seccion3">
+			<div class="proyectos" id="proyectos">
+				<h3>proyectos</h3>
+				<!-- acá quiero incluir la galareía con mis trabajos pero todavía me falta ver bien los videos para hacerlo-->
+			</div>
 		</section>
 	</main>
 	<footer>
-		<h6>COMPUIII_ CÁTEDRA-WISCHÑEVSKY_ UNLa2023</h6>
+		<h6>TODOS LOS DERECHOS RESERVADOS_ COMPUIII_ UNLA2023</h6>
 	</footer>
 </body>
 </html>
