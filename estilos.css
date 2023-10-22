@@ -52,8 +52,8 @@
 
 
 .seccion1{
-	width: 1920px;
-	height: 900px;
+	width: 100%;/*acá empecé a probar los valores en % para cuando haga el responsive*/
+	height: 100vh;
 	flex-shrink: 0;
 	background-color: #110F1B;
 }
@@ -70,8 +70,12 @@ h1{
 	padding-bottom: 200px;
 }
 
+h1:hover{
+	color: #EC542B;
+}
+
 .seccion2{
-	width: 1920px;
+	width: 100%;
 	height: 770px;
 	flex-shrink: 0;
 	background: #D5B598;
@@ -92,6 +96,7 @@ h1{
 .presentacion{
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	padding-top: 200px;
 }
 
@@ -105,7 +110,7 @@ h5{
 	align-self: flex-start;
 	gap: 20px;
 	padding-bottom: 10px;
-	width: auto; /*me gustaría ajustar bien esto, me falta ver los videos de los tamaños*/
+	text-wrap: balance;
 }
 
 .vermas{
@@ -132,8 +137,8 @@ h5{
 }
 
 .seccion3{
-	width: 1920px;
-	height: 770px;
+	width: 100%;
+	height: 800px;
 	flex-shrink: 0;
 	background: #110F1B;
 }
@@ -155,7 +160,7 @@ h3{
 /*SOBRE MI HTML*/
 
 .titulo{
-	width: 1920px;
+	/*width: 100%; lo saco porque sino se ve muy grande*/
 	height: 800px;
 	flex-shrink: 0;
 	background: #110F1B;
@@ -172,18 +177,17 @@ h2{
 	padding-top: 300px;
 }
 
-.presentacion2{
+.presentacion2{ /*NO PUEDO SOLUCIONAR ESTO AAAA, NO me doy cuenta cómo solucionarlo*/
 	display: flex;
-	padding-bottom: 200px;
+	justify-content: space-between;
 	background-color: #D5B598;
-	gap: 80px;
 	padding-left: 150px;
-	padding-top: 100px;
-} /*acá también me parece que me sigue faltando el tema de ajustar los tamaños de anchos*/
+	padding-top: 40px;
+}
 
-.caja{
-	padding-right: 80px;
-} 
+.caja1{
+	padding-right: 20px;
+}
 
 h4{
 	color: #EC542B;
@@ -289,7 +293,7 @@ textarea{
 
 /*FOOTER*/
 footer{
-	width: 1920px;
+	width: 100%;
 	height: 70px;
 	flex-shrink: 0;
 	border-top: 8px solid #EC542B;
