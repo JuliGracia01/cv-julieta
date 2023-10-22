@@ -109,12 +109,12 @@ h5{
 	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: normal;
 	align-self: flex-start;
 	/*gap: 20px;*/
 	padding-top: 30px;
 	padding-bottom: 20px;
 	text-wrap: balance;
+	line-height: 1.5;
 }
 
 .vermas{
@@ -152,7 +152,7 @@ h5{
 h3{
 	color: #02A894;
 	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 70px;
+	font-size: 50px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -193,38 +193,47 @@ element.style{
 
 .titulo{
 	/*width: 100%; lo saco porque sino se ve muy grande*/
-	height: 800px;
+	height: 400px;
 	flex-shrink: 0;
 	background: #110F1B;
-	padding-left: 150px;
+	padding-left: 100px;
+	display: flex;
+	align-items: center;
 }
 
 h2{
 	color: #02A894;
 	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 100px;
+	font-size: 80px;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: normal;
-	padding-top: 300px;
 }
 
-.presentacion2{ /*NO PUEDO SOLUCIONAR ESTO AAAA, NO me doy cuenta cómo solucionarlo*/
+.presentacion2{ 
 	display: flex;
 	justify-content: space-between;
 	background-color: #D5B598;
-	padding-left: 150px;
+	padding-left: 100px;
 	padding-top: 40px;
+	padding-bottom: 40px;
+	column-gap: 20px;
 }
 
 .caja1{
-	padding-right: 20px;
+	width: 50%;
+}
+.caja2{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 h4{
 	color: #EC542B;
 	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 40px;
+	font-size: 25px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -234,10 +243,11 @@ h4{
 p{
 	color: #110F1B;
 	font-family: 'Raleway', sans-serif;
-	font-size: 25px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
+	text-wrap: balance;
 }
 
 /*CONTACTO HTML*/
