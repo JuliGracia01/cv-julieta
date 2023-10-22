@@ -13,17 +13,15 @@
 
 /*HEADER*/
 .botonera{
+	width: 100%;
+	height: 50px;
+	background-color: #EC542B;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 60px 0px 40px;
-	background-color: #EC542B;
-	width: 100%;
-	height: 50px;
-	flex-shrink: 0; 
 	position: fixed;
+	z-index: 50;
 }
-
 .botonera ul{
 	display: inline-flex;
 	padding: 0px 12px;
@@ -31,7 +29,6 @@
 	align-items: center;
 	gap: 50px;
 }
-
 .botonera a{
 	color: #110F1B;
 	font-family: 'Darker Grotesque', sans-serif;
@@ -41,7 +38,6 @@
 	line-height: normal;
 	padding: 0px 12px;
 }
-
 .botonera a:hover{
 	color: #D5B598;
 	background-color: #110F1B;
@@ -49,80 +45,91 @@
 	padding: 0px 12px;
 }
 
-
-
+/*SECCION1 MI NOMBRE_INDEX*/
 .seccion1{
-	width: 100%;/*acá empecé a probar los valores en % para cuando haga el responsive*/
-	height: 100vh;
+	/*width: 100%;/*nose si es necesario poner este ancho acá*/
+	height: 65vh;
 	flex-shrink: 0;
 	background-color: #110F1B;
+	padding-left:100px;
+	padding-top: 230px;
 }
-
 h1{
 	color: #02A894;
 	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 200px;
+	font-size: 160px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	padding-left: 150px;
-	padding-top: 300px;
-	padding-bottom: 200px;
 }
 
-
+/*SECCION2_ BREVE PRESENTACIÓN*/
 .seccion2{
-	width: 100%;
-	height: 770px;
+	/*width: 100%;/*nose si es necesario poner este ancho acá*/
+	height: 300px;
 	flex-shrink: 0;
 	background: #D5B598;
-	gap: 60px;
+	column-gap: 60px;
 	display: flex;
 	justify-content: space-between;
+	padding:100px;
 }
-
-
-.mifoto{
-	padding-left: 150px;
-	padding-top: 200px;
-	border-radius: 50px;
-	display: flex;
-	align-items: flex-start;
-} /*en la foto no sé por qué no funciona el borde redondeado. Creo que se me pisa con otra cosa pero no encuentro con qué*/
+.mifoto img{
+	border-radius: 30px;
+}
 
 .presentacion{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding-top: 200px;
+}
+.presentacion img{
+	height: 80px;
+	animation: zoom 2s infinite alternate;
+	display: flex;
+	align-content: flex-start;
+	padding-bottom: 20px;
+	padding-top: 10px;
 }
 
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 h5{
 	color: #110F1B;
 	font-family: 'Raleway', sans-serif;
-	font-size: 35px;
+	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 	align-self: flex-start;
-	gap: 20px;
-	padding-bottom: 10px;
+	/*gap: 20px;*/
+	padding-top: 30px;
+	padding-bottom: 20px;
 	text-wrap: balance;
 }
 
 .vermas{
 	display: inline-flex;
-	margin: 10px 0px;
-	padding: 0px 12px;
+	margin: 30px 0px;
+	padding: 2px 12px;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	border-radius: 15px;
-	border: 2px solid #110F1B;
+	border-radius: 10px;
+	border: 1px solid #110F1B;
 	background: #02A894;
 	color: #110F1B;
 	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 50px;
+	font-size: 25px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -133,25 +140,53 @@ h5{
 	background-color: #110F1B;
 }
 
+/*SECCION3_ galeriaProyectos*/
 .seccion3{
-	width: 100%;
-	height: 800px;
+	/*width: 100%;/*nose si es necesario poner este ancho acá*/
+	height: 900px;
 	flex-shrink: 0;
 	background: #110F1B;
+	padding-left: 100px;
+	padding-top: 60px;
 }
-
-.proyectos{
-	padding-left: 150px;
-	padding-top: 100px;
-}/*falta armar y definir bien la galería de los proyectos*/
-
 h3{
-	color: #EC542B;
+	color: #02A894;
 	font-family: 'Darker Grotesque', sans-serif;
 	font-size: 70px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+}
+
+/*GALERIA*/
+.galeria{
+	display: grid;
+	padding-top: 20px;
+	padding-right: 30px;
+	/*grid-template-rows: 1fr auto 1fr;*/
+}
+ol[aria-label=Photographs]{
+	margin: .375rem;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+ol[aria-label=Photographs] img {
+	display:block;
+	max-width: 100%;
+	/*width: 15rem;*/
+	height: auto;
+	contain: layout;
+}
+figure{
+	margin: 0px;
+	padding: 0 0.5rem;
+	display: inline-flex;
+	flex-direction: column;
+}
+element.style{
+	view-transition-name: photo-0;
 }
 
 /*SOBRE MI HTML*/
@@ -291,41 +326,19 @@ textarea{
 /*FOOTER*/
 footer{
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	flex-shrink: 0;
-	border-top: 8px solid #EC542B;
+	border-top: 4px solid #EC542B;
 	background: #02A894;
 }
 
 footer h6{
 	color: #110F1B;
 	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
+	font-size: 10px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
 	padding-left: 60px;
 	margin-top: 20px;
-}
-
-
-/*ANIMACIÓN*/
-.presentacion img{
-	height: 100px;
-	animation: zoom 2s infinite alternate;
-	display: flex;
-	align-content: flex-start;
-	padding-bottom: 20px; /*me gustaría acomodar bien la estrellita esta para que quede alineada con el texto pero no supe aomodarla*/
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
