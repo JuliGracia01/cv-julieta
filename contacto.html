@@ -5,6 +5,7 @@
 	<title>contacto</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="img/favicon.svg">
+	<script src="js/audio.js"></script>
 </head>
 	<!--acá en cuanto al formulario entiendo también que a los tamaños de la sección mas que nada me faltaría el tema del diseño responsive-->
 <body>
@@ -37,8 +38,11 @@
 				<div>
 					<label for="consulta">Consulta</label>
 					<textarea name="consulta" id="consulta" maxlength="80">Tu consulta...</textarea>
-					<input type="submit" value="Enviar" class="enviar">
+					<input type="submit" value="Enviar" class="enviar" onclick="playSound()">
 				</div>
+				<audio id="myAudio">
+					<source src="audio/interface-124464.mp3" type="audio/mpeg">
+				</audio>
 			</form>
 		</section>
 	</main>
