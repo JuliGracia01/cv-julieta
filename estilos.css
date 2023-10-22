@@ -180,10 +180,14 @@ ol[aria-label=Photographs] img {
 	contain: layout;
 }
 figure{
-	margin: 0px;
-	padding: 0 0.5rem;
+	margin: 100px;
+	/*padding: 0 0.5rem;esto lo copie tal cual pero no estoy segura para que sirve*/
 	display: inline-flex;
 	flex-direction: column;
+	background: #D5B598;
+}
+.img_galeria{
+	background: #D5B598;
 }
 element.style{
 	view-transition-name: photo-0;
