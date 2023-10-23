@@ -138,11 +138,13 @@ h5{
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+	transition: transform 0.3s ease;
 }
 
 .vermas:hover{
 	color: #EC542B;
 	background-color: #110F1B;
+	transform: scale(1.1);
 }
 
 /*SECCION3_ galeriaProyectos*/
@@ -169,6 +171,12 @@ h3{
 	padding-top: 30px;
 	padding-right: 30px;
 	/*grid-template-rows: 1fr auto 1fr;*/
+}
+.galeria img{
+	transition: transform 0.3s ease;
+}
+.galeria img:hover{
+	 transform: scale(1.1);
 }
 ol[aria-label=Photographs]{
 	margin: .375rem;
@@ -199,7 +207,6 @@ element.style{
 }
 
 /*SOBRE MI HTML*/
-
 .titulo{
 	/*width: 100%; lo saco porque sino se ve muy grande*/
 	height: 400px;
@@ -226,11 +233,22 @@ h2{
 	padding-left: 100px;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	column-gap: 20px;
+	column-gap: 30px;
 }
 
 .caja1{
 	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.pcaja1{
+	color: #110F1B;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	text-wrap: balance;
 }
 .caja2{
 	width: 50%;
@@ -259,6 +277,22 @@ p{
 	line-height: 1.5;
 	text-wrap: balance;
 }
+/*SOBRE MI RESPONSIVE*/
+@media screen and (max-width: 720px) {
+
+.caja1, .caja2 {
+	width: 100%;
+	align-items:flex-start;
+}
+.presentacion2{ 
+	flex-direction: column;
+	background-color: #D5B598;
+	padding-left: 100px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+}
+
 
 /*CONTACTO HTML*/
 
@@ -340,11 +374,13 @@ textarea{
 	font-weight: 700;
 	line-height: normal;
 	width: 20%;
+	transition: transform 0.3s ease;
 }
 
 .enviar:hover{
 	color: #EC542B;
 	background-color: #110F1B;
+	transform: scale(1.1);
 }
 
 /*FOOTER*/
