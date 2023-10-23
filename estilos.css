@@ -278,18 +278,28 @@ p{
 	text-wrap: balance;
 }
 /*SOBRE MI RESPONSIVE*/
-@media screen and (max-width: 720px) {
-
-.caja1, .caja2 {
+@media screen and (max-width: 750px) {
+	.titulo{
+	height: 200px;
+	flex-shrink: 0;
+	background: #110F1B;
+	padding-left: 150px;
+	display: flex;
+	align-items: center;
 	width: 100%;
+	}
+
+	.caja1, .caja2 {
+	/*width: 100%;*/
 	align-items:flex-start;
 }
-.presentacion2{ 
+	.presentacion2{ 
 	flex-direction: column;
 	background-color: #D5B598;
-	padding-left: 100px;
+	padding-left: 150px;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	width: 100%;
 }
 }
 
