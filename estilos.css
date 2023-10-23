@@ -10,6 +10,10 @@
 	list-style-type: none;
 	text-decoration: none;
 }
+*{
+	cursor: url("img/cursorn.svg")auto; /*quise probar esto pero no estaría funcionando*/
+}
+
 
 /*HEADER*/
 .botonera{
@@ -21,6 +25,7 @@
 	justify-content: space-between;
 	position: fixed;
 	z-index: 50;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 .botonera ul{
 	display: inline-flex;
@@ -37,6 +42,7 @@
 	font-weight: 700;
 	line-height: normal;
 	padding: 0px 12px;
+	transition: color 0.3s ease, background-color 0.3s ease; /*puse esta transicion pero se ve rara*/
 }
 .botonera a:hover{
 	color: #D5B598;
@@ -44,7 +50,8 @@
 	border-radius: 15px;
 	padding: 0px 12px;
 }
-.estrella1 img:hover{
+.botonera img:hover {
+	color: none;
 	background-color: none;
 	border-radius: none;
 	padding: none;
@@ -66,8 +73,11 @@ h1{
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	transition: font-size 0.3s ease;
 }
-
+h1:hover{
+	font-size: 180px;
+}
 /*SECCION2_ BREVE PRESENTACIÓN*/
 .seccion2{
 	/*width: 100%;/*nose si es necesario poner este ancho acá*/
@@ -188,7 +198,7 @@ ol[aria-label=Photographs]{
 ol[aria-label=Photographs] img {
 	display:block;
 	max-width: 100%;
-	/*width: 15rem;*/
+	/*width: 15rem;no sabia bien la funcion de esto asiq lo saque*/
 	height: auto;
 	contain: layout;
 }
@@ -202,9 +212,21 @@ figure{
 .img_galeria{
 	background: #D5B598;
 }
+.h3galeria{
+	color: #02A894;
+	font-family: 'Darker Grotesque', sans-serif;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+} /*acá no entiendo porqué no se me pone con la clase que tengo estos titulos y no lo puedo cambiar*/
+
+
 element.style{
 	view-transition-name: photo-0;
 }
+/*quise agregar alguna transicion al abrir las imagenes pero no me funcionaron*/
+
 
 /*SOBRE MI HTML*/
 .titulo{
@@ -224,6 +246,22 @@ h2{
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+	position: relative;
+	display: inline-block;
+}
+h2::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background-color:#02A894;
+	transition: width 0.3s ease;
+}
+
+h2:hover::after {
+	width: 100%;
 }
 
 .presentacion2{ 
@@ -277,7 +315,7 @@ p{
 	line-height: 1.5;
 	/*text-wrap: balance;*/
 }
-/*SOBRE MI RESPONSIVE*/
+/*SOBRE MI RESPONSIVE*/ /*estuve probando el responsive como para celular, no se si voy bien*/
 @media screen and (max-width: 750px) {
 	.titulo{
 	height: 200px;
@@ -301,7 +339,7 @@ p{
 	padding-bottom: 40px;
 	/*width: 100%;*/
 }
-	.botonera{
+	/*.botonera{
 	width: 100%;
 	height: 50px;
 	background-color: #EC542B;
@@ -311,13 +349,13 @@ p{
 	position: fixed;
 	z-index: 50;
 }
-	footer{
+	/*footer{
 	/*width: 100%;*/
-	height: 50px;
+	/*height: 50px;
 	flex-shrink: 0;
 	border-top: 4px solid #EC542B;
 	background: #02A894;
-}
+}*/
 	p{
 	color: #110F1B;
 	font-family: 'Raleway', sans-serif;
@@ -391,6 +429,7 @@ textarea{
 	font-style: normal;
 	font-size: 14px;
 	margin-top: 10px;
+	background-color: #8ACFC7
 
 }
 
