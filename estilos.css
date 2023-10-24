@@ -207,8 +207,7 @@ figure{
 
 element.style{
 	view-transition-name: photo-0;
-}
-/*quise agregar alguna transicion al abrir las imagenes pero no me funcionaron*/
+}/*quise agregar alguna transicion al abrir las imagenes pero no me funcionaron*/
 
 
 /*SOBRE MI HTML*/
@@ -284,7 +283,7 @@ p{
 	font: 400 18px/1.5 'Raleway', sans-serif;
 	/*text-wrap: balance;*/
 }
-/*SOBRE MI RESPONSIVE*/ /*estuve probando el responsive como para celular, use la medida de mi celu*/
+/*SOBRE MI RESPONSIVE*/ /*estuve probando el responsive como para celular, use la medida de mi celu. En el navegador me funciona pero en mi celular no*/
 @media screen and (max-width: 750px) {
 	.presentacion2{
 		display: flex;
@@ -293,20 +292,37 @@ p{
 		padding-top: 60px;
 	}
 	.caja1{
-		width: 100%;
+		width: 90%;
 	}
 	.caja2{
-	width: 100%;
+		width: 100%;
 	}
 	.titulo{
 		height: 300px;
 		padding-left: 50px;
 	}
+	h2{
+		font-size: 60px;
+	}
+	h3{
+		font-size: 40px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	p, .pcaja1{
+		font-size: 16px;
+	}
+	.conacto{
+		padding-left: 50px;
+	}/*acá le quise hacer también el responsive en la parte de contacto pero no me estaría funcionando*/
+	form{
+		flex-direction: column;
+	}
 }
 
 
 /*CONTACTO HTML*/
-
 .contacto{
 	/*width: 1920px;*/
 	height: 500px;
