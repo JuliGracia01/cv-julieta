@@ -10,8 +10,8 @@
 	list-style-type: none;
 	text-decoration: none;
 }
-*{
-	cursor: url("img/cursorn.svg")auto; /*quise probar esto pero no estaría funcionando*/
+main{
+	cursor: url(img/cursorn.svg), auto; /*anduvo, nose si es muy grande pero quedó*/
 }
 
 
@@ -91,8 +91,11 @@ h1:hover{
 }
 .mifoto img{
 	border-radius: 30px;
+	transition: transform 0.3s ease;
 }
-
+.mifoto img:hover{
+	 transform: scale(1.1);
+}
 .presentacion{
 	display: flex;
 	flex-direction: column;
