@@ -27,14 +27,14 @@ main{
 	z-index: 50;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
-.botonera ul{
+.botones li{
 	display: inline-flex;
 	padding: 0px 12px;
 	justify-content: center;
 	align-items: center;
 	gap: 50px;
 }
-.botonera a{
+.botones a{
 	color: #110F1B;
 	font-family: 'Darker Grotesque', sans-serif;
 	font-size: 20px;
@@ -44,18 +44,13 @@ main{
 	padding: 0px 12px;
 	transition: color 0.3s ease, background-color 0.3s ease; /*puse esta transicion pero se ve rara*/
 }
-.botonera a:hover{
+.botones a:hover{
 	color: #D5B598;
 	background-color: #110F1B;
 	border-radius: 15px;
 	padding: 0px 12px;
 }
-.botonera img:hover {
-	color: none;
-	background-color: none;
-	border-radius: none;
-	padding: none;
-} /*no le puedo sacar el hover a la estrellita*/
+
 
 /*SECCION1 MI NOMBRE_INDEX*/
 .seccion1{
@@ -92,6 +87,7 @@ h1:hover{
 .mifoto img{
 	border-radius: 30px;
 	transition: transform 0.3s ease;
+	box-shadow: 2px 4px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .mifoto img:hover{
 	 transform: scale(1.1);
