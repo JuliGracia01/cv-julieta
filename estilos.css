@@ -247,8 +247,8 @@ h2:hover::after {
 	display: flex;
 	justify-content: space-between;
 	background-color: #D5B598;
-	padding: 40px 0 40px 100px;
-	column-gap: 40px;
+	padding: 80px 0 100px 100px;
+	column-gap: 70px;
 }
 
 .caja1{
@@ -284,9 +284,24 @@ p{
 	font: 400 18px/1.5 'Raleway', sans-serif;
 	/*text-wrap: balance;*/
 }
-/*SOBRE MI RESPONSIVE*/ /*estuve probando el responsive como para celular, no se si voy bien*/
+/*SOBRE MI RESPONSIVE*/ /*estuve probando el responsive como para celular, use la medida de mi celu*/
 @media screen and (max-width: 750px) {
-
+	.presentacion2{
+		display: flex;
+		flex-direction: column;
+		padding-left: 50px;
+		padding-top: 60px;
+	}
+	.caja1{
+		width: 100%;
+	}
+	.caja2{
+	width: 100%;
+	}
+	.titulo{
+		height: 300px;
+		padding-left: 50px;
+	}
 }
 
 
@@ -297,7 +312,7 @@ p{
 	height: 500px;
 	flex-shrink: 0;
 	background: #D5B598;
-	padding: 40px 0 0 100px;
+	padding: 80px 0 0 100px;
 }
 
 .pcontacto{
