@@ -43,7 +43,7 @@ main{
 	line-height: normal;
 	padding: 0px 12px;
 	border-radius: 15px;
-	transition: color 0.3s ease, background-color 0.3s ease; /*puse esta transicion pero se ve rara*/
+	transition: color 0.3s ease, background-color 0.3s ease; /*puse esta transicion pero se ve rara*/ 
 }
 .botones a:hover{
 	color: #D5B598;
@@ -55,7 +55,7 @@ main{
 
 /*SECCION1 MI NOMBRE_INDEX*/
 .seccion1{
-	/*width: 100%;/*nose si es necesario poner este ancho acá*/
+	/*width: 100%;/*nose si es necesario poner este ancho acá*/ /*si queda bien no hace falta*/
 	height: 65vh;
 	flex-shrink: 0;
 	background-color: #110F1B;
@@ -188,7 +188,7 @@ ol[aria-label=Photographs] img {
 }
 figure{
 	margin: 100px;
-	/*padding: 0 0.5rem;esto lo copie tal cual pero no estoy segura para que sirve*/
+	/*padding: 0 0.5rem;esto lo copie tal cual pero no estoy segura para que sirve*/ /*sacalo entonces*/ 
 	display: inline-flex;
 	flex-direction: column;
 	background: #D5B598;
