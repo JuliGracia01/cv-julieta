@@ -11,7 +11,7 @@
 	text-decoration: none;
 }
 main{
-	cursor: url(img/cursorn.svg), auto; /*anduvo, nose si es muy grande pero quedó*/
+	cursor: url(img/cursorn.svg), auto; 
 }
 
 
@@ -43,7 +43,7 @@ main{
 	line-height: normal;
 	padding: 0px 12px;
 	border-radius: 15px;
-	transition: color 0.3s ease, background-color 0.3s ease; /*puse esta transicion pero se ve rara*/
+	transition: color 0.3s ease, background-color 0.3s ease; 
 }
 .botones a:hover{
 	color: #D5B598;
@@ -55,7 +55,6 @@ main{
 
 /*SECCION1 MI NOMBRE_INDEX*/
 .seccion1{
-	/*width: 100%;/*nose si es necesario poner este ancho acá*/
 	height: 65vh;
 	flex-shrink: 0;
 	background-color: #110F1B;
@@ -75,7 +74,6 @@ h1:hover{
 }
 /*SECCION2_ BREVE PRESENTACIÓN*/
 .seccion2{
-	/*width: 100%;/*nose si es necesario poner este ancho acá*/
 	height: 300px;
 	flex-shrink: 0;
 	background: #D5B598;
@@ -149,7 +147,6 @@ h5{
 
 /*SECCION3_ galeriaProyectos*/
 .seccion3{
-	/*width: 100%;/*nose si es necesario poner este ancho acá*/
 	height: 900px;
 	flex-shrink: 0;
 	background: #110F1B;
@@ -164,7 +161,6 @@ h3{
 .galeria{
 	display: grid;
 	padding: 40px 100px 0px 0px;
-	/*grid-template-rows: 1fr auto 1fr;*/
 }
 .galeria img{
 	transition: transform 0.3s ease;
@@ -182,13 +178,11 @@ ol[aria-label=Photographs]{
 ol[aria-label=Photographs] img {
 	display:block;
 	max-width: 100%;
-	/*width: 15rem;no sabia bien la funcion de esto asiq lo saque*/
 	height: auto;
 	contain: layout;
 }
 figure{
 	margin: 100px;
-	/*padding: 0 0.5rem;esto lo copie tal cual pero no estoy segura para que sirve*/
 	display: inline-flex;
 	flex-direction: column;
 	background: #D5B598;
@@ -196,24 +190,14 @@ figure{
 .img_galeria{
 	background: #D5B598;
 }
-.h3galeria{
-	color: #02A894;
-	font-family: 'Darker Grotesque', sans-serif;
-	font-size: 50px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-} /*acá no entiendo porqué no se me pone con la clase que tengo estos titulos y no lo puedo cambiar*/
-
 
 element.style{
 	view-transition-name: photo-0;
-}/*quise agregar alguna transicion al abrir las imagenes pero no me funcionaron*/
+}
 
 
 /*SOBRE MI HTML*/
 .titulo{
-	/*width: 100%; lo saco porque sino se ve muy grande*/
 	height: 400px;
 	flex-shrink: 0;
 	background: #110F1B;
@@ -270,7 +254,6 @@ h2:hover::after {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	/*gap: 5px;*/
 }
 
 h4{
@@ -282,21 +265,22 @@ h4{
 p{
 	color: #110F1B;
 	font: 400 18px/1.5 'Raleway', sans-serif;
-	/*text-wrap: balance;*/
+	text-wrap: balance;
 }
-/*SOBRE MI RESPONSIVE*/ /*estuve probando el responsive como para celular, use la medida de mi celu. En el navegador me funciona pero en mi celular no*/
-@media screen and (max-width: 750px) {
+/*SOBRE MI RESPONSIVE*/ 
+@media screen and (max-width: 600px) {
 	.presentacion2{
 		display: flex;
 		flex-direction: column;
 		padding-left: 50px;
 		padding-top: 60px;
+		padding-right: 20px;
 	}
 	.caja1{
 		width: 90%;
 	}
 	.caja2{
-		width: 100%;
+		width: 90%;
 	}
 	.titulo{
 		height: 300px;
@@ -314,22 +298,84 @@ p{
 	p, .pcaja1{
 		font-size: 16px;
 	}
-	.conacto{
-		padding-left: 50px;
-	}/*acá le quise hacer también el responsive en la parte de contacto pero no me estaría funcionando*/
+	.botones a{
+		font-size: 16px;
+		padding: 0px;
+	}
+	.botones a:hover{
+		padding: 0px;
+	}
+	.botonera{
+		height: 60px;
+	}
+
+	/*index*/
+	.seccion1{
+		height: 30vh;
+		padding: 80px 0px 0px 50px;
+	}
+	h1{
+		font-size: 120px;
+	}
+	.seccion2{
+		flex-direction: column;
+		padding: 50px;
+		height: 600px;
+	}
+	.presentacion{
+		padding-top: 20px;
+	}
+	.presentacion img{
+		height: 60px;
+		padding: 30px 0px 0px;
+	}
+	h5{
+		font-size: 20px;
+	}
+	.vermas{
+		margin: 0px;
+		font-size: 20px;
+	}
+	
+	.galeria{
+		padding: 40px 50px 50px 0px;
+	}
+	ol[aria-label=Photographs]{
+		flex-direction: column;
+		display: flex;
+	}
+	.seccion3{
+		padding: 60px 0 0 50px;
+		height: auto;
+	}
+	
+	/*contacto, acá el responsive no me termina de quedar bien*/
+	.contacto{
+		height: 700px;
+		padding: 20px 0 0 50px;
+	}
 	form{
 		flex-direction: column;
+		margin-top: 0px;
+		gap: 0px;
+		padding: 20px 0 0 0px;
+	}
+	form div{
+		margin-top: 0px;
+	}
+	.enviar{
+		margin-top: 0px;
+	}
+	.pcontacto{
+		font-size: 18px;
 	}
 }
-
-
 /*CONTACTO HTML*/
 .contacto{
-	/*width: 1920px;*/
-	height: 500px;
+	height: auto;
 	flex-shrink: 0;
 	background: #D5B598;
-	padding: 80px 0 0 100px;
+	padding: 80px 0 100px 100px;
 }
 
 .pcontacto{
@@ -338,9 +384,7 @@ p{
 
 form{
 	margin-top: 60px;
-	/*margin-bottom: 30px;*/
 	display:flex;
-	flex-direction: row;
 	gap: 60px;
 }
 
@@ -360,7 +404,7 @@ input{
 	font-weight: 400;
 	font-style: normal;
 	font-size: 14px;
-	width: 500px;
+	width: 420px;
 }
 
 label{
@@ -418,4 +462,4 @@ footer h6{
 	font: 700 10px/normal 'Raleway', sans-serif;
 	padding-left: 60px;
 	margin-top: 20px;
-}
+	}
