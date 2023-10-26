@@ -72,6 +72,7 @@ h1{
 h1:hover{
 	font-size: 180px;
 }
+
 /*SECCION2_ BREVE PRESENTACIÓN*/
 .seccion2{
 	height: 300px;
@@ -104,21 +105,20 @@ h1:hover{
 }
 
 @keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+0% {
+	transform: scale(1);
+}
+50% {
+	transform: scale(1.2);
+}
+100% {
+	transform: scale(1);
+}
 }
 h5{
 	color: #110F1B;
 	font: 400 25px/1.5 'Raleway', sans-serif;
 	align-self: flex-start;
-	/*gap: 20px;*/
 	padding: 30px 0 20px;
 	text-wrap: balance;
 	line-height: 1.5;
@@ -166,7 +166,7 @@ h3{
 	transition: transform 0.3s ease;
 }
 .galeria img:hover{
-	 transform: scale(1.1);
+	transform: scale(1.1);
 }
 ol[aria-label=Photographs]{
 	margin: .375rem;
@@ -194,7 +194,6 @@ figure{
 element.style{
 	view-transition-name: photo-0;
 }
-
 
 /*SOBRE MI HTML*/
 .titulo{
