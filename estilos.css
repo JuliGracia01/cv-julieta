@@ -188,6 +188,10 @@ figure{
 	flex-direction: column;
 	background: #D5B598;
 }
+figure img{
+	border-radius: 30px;
+	box-shadow: 2px 4px 5px 5px rgba(0, 0, 0, 0.2);
+}
 .img_galeria{
 	background: #D5B598;
 }
@@ -320,7 +324,7 @@ p{
 	.seccion2{
 		flex-direction: column;
 		padding: 50px;
-		height: 600px;
+		height: 520px;
 	}
 	.presentacion{
 		padding-top: 20px;
@@ -331,6 +335,10 @@ p{
 	}
 	h5{
 		font-size: 20px;
+	}
+	.mifoto img{
+		width: 350px;
+		height: 250px;
 	}
 	.vermas{
 		margin: 0px;
