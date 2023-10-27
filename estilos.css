@@ -356,8 +356,11 @@ p{
 		padding: 60px 0 0 50px;
 		height: auto;
 	}
-	
-	/*contacto, acá el responsive no me termina de quedar bien*/
+	footer h6{
+		font: 700 8px/normal 'Raleway', sans-serif;
+		padding-left: 40px;
+	}
+	/*contacto*/
 	.contacto{
 		height: 700px;
 		padding: 20px 0 0 50px;
@@ -472,7 +475,7 @@ footer h6{
 	padding-left: 60px;
 	margin-top: 20px;
 	width: 50%;
-	}
+}
 .iconos{
 	display: flex;
 	justify-content: flex-end;
